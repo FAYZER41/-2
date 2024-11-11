@@ -327,7 +327,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         await bet_segments(update, context)  # Вызываем bet_segments для "Сегменты"
 
 async def main() -> None:
-    application = ApplicationBuilder().token('7927429460:AAG-uicBpkJ4ayiSQ7_XW9wmmODjlikb2g0').build()
+    application = ApplicationBuilder().token('').build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CallbackQueryHandler(button_handler))
